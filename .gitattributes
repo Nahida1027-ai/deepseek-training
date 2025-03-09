@@ -1,8 +1,13 @@
 * text eol=lf
 *.ipynb linguist-detectable=false
-
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.gif binary
 *.pdf binary
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.safetensors filter=lfs diff=lfs merge=lfs -text
+data/*.jsonl filter=lfs diff=lfs merge=lfs -text
+*.jsonl filter=lfs diff=lfs merge=lfs -text
+*.jsonl filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
